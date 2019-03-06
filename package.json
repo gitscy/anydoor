@@ -1,27 +1,34 @@
 {
-  "name": "anydoor",
-  "version": "1.0.0",
-  "description": "Tiny NodeJS Static Web Server",
-  "main": "test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gitscy/anydoor.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gitscy/anydoor/issues"
-  },
-  "homepage": "https://github.com/gitscy/anydoor#readme",
-  "devDependencies": {
-    "eslint": "^5.13.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
-  }
+    "name": "anydoor",
+    "version": "1.0.0",
+    "description": "Tiny NodeJS Static Web Server",
+    "main": "test.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint .",
+        "fix": "eslint --fix ."
+    },
+    "pre-commit": [
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gitscy/anydoor.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gitscy/anydoor/issues"
+    },
+    "homepage": "https://github.com/gitscy/anydoor#readme",
+    "devDependencies": {
+        "eslint": "^5.13.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-node": "^8.0.1",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {}
 }
