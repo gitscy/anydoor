@@ -9,8 +9,9 @@
     <style>
         body {
             margin: 30px;
-            padding: 30px;
-            font-size: 12px;
+            padding: 80px;
+            font-size: 13px;
+            color: red;
         }
 
         a {
