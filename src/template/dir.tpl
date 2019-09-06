@@ -16,7 +16,7 @@
 
         a {
             display: block;
-            font-size: 30px;
+            font-size: 40px;
         }
     </style>
 </head>
